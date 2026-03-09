@@ -3,7 +3,7 @@
 # ------------------------------------------------------------------------------
 module "xml_bep_asg_security_group" {
   source  = "terraform-aws-modules/security-group/aws"
-  version = "~> 5.3.1"
+  version = "5.3.1"
 
   name        = "sgr-${var.application}-bep-asg-001"
   description = "Security group for the ${var.application} backend asg"

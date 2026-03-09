@@ -3,7 +3,7 @@
 # ------------------------------------------------------------------------------
 module "xml_rds_security_group" {
   source  = "terraform-aws-modules/security-group/aws"
-  version = "~> 5.3.1"
+  version = "5.3.1"
 
   name        = "sgr-${var.application}-rds-001"
   description = "Security group for the ${var.application} rds database"
@@ -114,7 +114,7 @@ resource "aws_security_group_rule" "test_concourse_ingress_oem" {
 # ------------------------------------------------------------------------------
 module "xml_rds" {
   source  = "terraform-aws-modules/rds/aws"
-  version = "6.13.1" # Pinned version to ensure updates are a choice, can be upgraded if new features are available and required.
+  version = "6.13.1"
 
   create_db_parameter_group = "true"
   create_db_subnet_group    = "true"

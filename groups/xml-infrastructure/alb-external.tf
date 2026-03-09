@@ -3,7 +3,7 @@
 # ------------------------------------------------------------------------------
 module "xml_external_alb_security_group" {
   source  = "terraform-aws-modules/security-group/aws"
-  version = "~> 5.3.1"
+  version = "5.3.1"
 
   name        = "sgr-${var.application}-alb-001"
   description = "Security group for the ${var.application} web servers"
@@ -19,7 +19,7 @@ module "xml_external_alb_security_group" {
 #--------------------------------------------
 module "xml_external_alb" {
   source  = "terraform-aws-modules/alb/aws"
-  version = "~> 6.7.0"
+  version = "6.7.0"
 
   name                       = "alb-${var.application}-external-001"
   vpc_id                     = data.aws_vpc.vpc.id
