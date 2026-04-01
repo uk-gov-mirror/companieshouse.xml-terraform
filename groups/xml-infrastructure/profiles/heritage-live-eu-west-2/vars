@@ -239,6 +239,11 @@ fe_cw_logs = {
     file_path = "/var/log/httpd"
     log_group_retention = 90
   }
+
+  "access_lb_ip_log" = {
+    file_path = "/var/log/httpd"
+    log_group_retention = 90
+  }
 }
 
 bep_cw_logs = {
