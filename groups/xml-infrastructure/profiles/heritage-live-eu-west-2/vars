@@ -215,6 +215,11 @@ fe_cw_logs = {
     log_group_retention = 30
   }
 
+  "yum.log" = {
+    file_path = "/var/log"
+    log_group_retention = 30
+  }
+
   "errors.log" = {
     file_path = "/var/log/amazon/ssm"
     log_group_retention = 30
@@ -248,6 +253,11 @@ bep_cw_logs = {
   }
 
   "secure" = {
+    file_path = "/var/log"
+    log_group_retention = 30
+  }
+
+  "yum.log" = {
     file_path = "/var/log"
     log_group_retention = 30
   }
