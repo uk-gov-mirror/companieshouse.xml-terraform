@@ -215,11 +215,6 @@ fe_cw_logs = {
     log_group_retention = 30
   }
 
-  "yum.log" = {
-    file_path = "/var/log"
-    log_group_retention = 30
-  }
-
   "errors.log" = {
     file_path = "/var/log/amazon/ssm"
     log_group_retention = 30
@@ -232,44 +227,34 @@ fe_cw_logs = {
 
   "access_log" = {
     file_path = "/var/log/httpd"
-    log_group_retention = 30
+    log_group_retention = 90
   }
 
   "error_log" = {
     file_path = "/var/log/httpd"
-    log_group_retention = 30
-  }
-
-  "access_lb_ip_log" = {
-    file_path = "/var/log/httpd"
-    log_group_retention = 30
+    log_group_retention = 90
   }
 }
 
 bep_cw_logs = {
   "audit.log" = {
     file_path = "/var/log/audit"
-    log_group_retention = 180
+    log_group_retention = 30
   }
 
  "messages" = {
     file_path = "/var/log"
-    log_group_retention = 180
+    log_group_retention = 30
   }
 
   "secure" = {
     file_path = "/var/log"
-    log_group_retention = 180
-  }
-
-  "yum.log" = {
-    file_path = "/var/log"
-    log_group_retention = 180
+    log_group_retention = 30
   }
 
   "cron" = {
     file_path = "/var/log"
-    log_group_retention = 180
+    log_group_retention = 30
   }
 
   "errors.log" = {
@@ -284,72 +269,72 @@ bep_cw_logs = {
 
   "backend.log" = {
     file_path = "/home/xml"
-    log_group_retention = 180
+    log_group_retention = 90
   }
 
   "createCerts.log" = {
     file_path = "/home/xml"
-    log_group_retention = 180
+    log_group_retention = 90
   }
 
   "ef_presenter_data_import.log" = {
     file_path = "/home/xml"
-    log_group_retention = 180
+    log_group_retention = 90
   }
 
   "emailDispatcher.log" = {
     file_path = "/home/xml"
-    log_group_retention = 180
+    log_group_retention = 90
   }
 
   "emailPollReminder.log" = {
     file_path = "/home/xml"
-    log_group_retention = 180
+    log_group_retention = 90
   }
 
   "eRemindersBounce.log" = {
     file_path = "/home/xml"
-    log_group_retention = 180
+    log_group_retention = 90
   }
 
   "eRemindersRedirect.log" = {
     file_path = "/home/xml"
-    log_group_retention = 180
+    log_group_retention = 90
   }
 
   "formArchive.log" = {
     file_path = "/home/xml"
-    log_group_retention = 180
+    log_group_retention = 90
   }
 
   "formPartition.log" = {
     file_path = "/home/xml"
-    log_group_retention = 180
+    log_group_retention = 90
   }
 
   "formProcess.log" = {
     file_path = "/home/xml"
-    log_group_retention = 180
+    log_group_retention = 90
   }
 
   "formResponse.log" = {
     file_path = "/home/xml"
-    log_group_retention = 180
+    log_group_retention = 90
   }
 
   "statsReport.log" = {
     file_path = "/home/xml"
-    log_group_retention = 180
+    log_group_retention = 90
   }
 
   "weeding.log" = {
     file_path = "/home/xml"
-    log_group_retention = 180
+    log_group_retention = 90
   }
 
   "xmlDigestCacheDelete.log" = {
     file_path = "/home/xml"
-    log_group_retention = 180
+    log_group_retention = 90
   }
 }
 
